@@ -52,7 +52,7 @@ export default function Home() {
             icon={Sparkles}
             title="ByteSpark.Motivation"
             description="AI-powered Instagram motivation channel. 300+ unique shorts inspiring people daily."
-            supportLink="https://ko-fi.com/your-bytespark"
+            supportLink="https://ko-fi.com/bytespark"
             supportText="Buy Me a Coffee"
           />
           <ProjectCard
@@ -60,7 +60,7 @@ export default function Home() {
             title="Thought Refiner"
             description="Privacy-first communication tool transforming complex thoughts into clear messages."
             supportLink="https://your-payment-link.com"
-            supportText="Purchase Tokens"
+            supportText="Coming Soon"
           />
         </div>
         <div className="text-center text-gray-400">
