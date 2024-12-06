@@ -1,5 +1,5 @@
 import { Radio, Sparkles, Brain, Heart } from "lucide-react";
-
+import { LucideIcon } from "lucide-react";
 const ProjectCard = ({
   title,
   icon: Icon,
@@ -8,7 +8,7 @@ const ProjectCard = ({
   supportText,
 }: {
   title: string;
-  icon: any;
+  icon: LucideIcon; // Changed from any
   description: string;
   supportLink: string;
   supportText: string;
