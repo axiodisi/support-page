@@ -45,7 +45,7 @@ export default function Home() {
             icon={Radio}
             title="RADIOAI"
             description="24/7 AI radio with three trans hosts discussing trending topics."
-            supportLink="https://gofundme.com/your-radioai"
+            supportLink="https://www.gofundme.com/manage/save-radioai-bridging-divides-one-conversation-at-a-time"
             supportText="Support Server Costs"
           />
           <ProjectCard
