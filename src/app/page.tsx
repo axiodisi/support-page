@@ -1,5 +1,6 @@
 import { Radio, Sparkles, Brain, Heart } from "lucide-react";
 import { LucideIcon } from "lucide-react";
+
 const ProjectCard = ({
   title,
   icon: Icon,
@@ -8,23 +9,25 @@ const ProjectCard = ({
   supportText,
 }: {
   title: string;
-  icon: LucideIcon; // Changed from any
+  icon: LucideIcon;
   description: string;
   supportLink: string;
   supportText: string;
 }) => (
-  <div className="p-6 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10 hover:border-purple-500/50 transition-all">
-    <div className="flex items-center gap-3 mb-4">
-      <Icon className="w-8 h-8 text-pink-500" />
-      <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-pink-500 text-transparent bg-clip-text">
+  <div className="p-4 md:p-6 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10 hover:border-purple-500/50 transition-all">
+    <div className="flex items-center gap-2 md:gap-3 mb-3">
+      <Icon className="w-6 h-6 md:w-8 md:h-8 text-pink-500" />
+      <h3 className="text-lg md:text-xl font-bold bg-gradient-to-r from-orange-400 to-pink-500 text-transparent bg-clip-text">
         {title}
       </h3>
     </div>
-    <p className="text-gray-300 mb-4">{description}</p>
+    <p className="text-sm md:text-base text-gray-300 mb-4">{description}</p>
     {supportLink && (
       <a
         href={supportLink}
-        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-sm md:text-base w-full justify-center md:w-auto text-white hover:from-blue-500 hover:to-purple-500"
       >
         <Heart className="w-4 h-4" />
         {supportText}
@@ -36,11 +39,11 @@ const ProjectCard = ({
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-black/95 to-purple-900/20">
-      <main className="container mx-auto px-4 py-12">
-        <h1 className="text-5xl font-bold text-center mb-6 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-transparent bg-clip-text">
+      <main className="container mx-auto px-3 md:px-4 py-8 md:py-12">
+        <h1 className="text-3xl md:text-5xl font-bold text-center mb-6 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-transparent bg-clip-text">
           AI Projects
         </h1>
-        <div className="grid gap-6 mb-12">
+        <div className="grid gap-4 md:gap-6 mb-8 md:mb-12">
           <ProjectCard
             icon={Radio}
             title="RADIOAI"
@@ -63,7 +66,7 @@ export default function Home() {
             supportText="Coming Soon"
           />
         </div>
-        <div className="text-center text-gray-400">
+        <div className="text-center text-gray-400 text-sm md:text-base">
           <p>
             All support helps keep these projects running and growing. Thank
             you! 💜
